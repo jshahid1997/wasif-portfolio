@@ -6,19 +6,21 @@ import { HiArrowDown } from "react-icons/hi";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen w-full overflow-hidden">
-      {/* Background Video */}
-      <div className="absolute inset-0 w-full h-full">
-        <iframe
-          src={heroVideo.embedUrl}
-          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[177.77vh] h-[56.25vw] min-w-full min-h-full"
-          allow="autoplay; encrypted-media"
-          title={heroVideo.title}
-          style={{
-            border: 'none',
-            pointerEvents: 'none',
-          }}
-        />
+    <section className="relative h-screen w-full overflow-hidden bg-black">
+      {/* Background Video - Maintains aspect ratio, scales to fit */}
+      <div className="absolute inset-0 w-full h-full flex items-center justify-center">
+        <div className="relative w-full h-full max-w-[177.78vh] max-h-[56.25vw]">
+          <iframe
+            src={heroVideo.embedUrl}
+            className="absolute inset-0 w-full h-full"
+            allow="autoplay; encrypted-media"
+            title={heroVideo.title}
+            style={{
+              border: 'none',
+              pointerEvents: 'none',
+            }}
+          />
+        </div>
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/30" />
       </div>
