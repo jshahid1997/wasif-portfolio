@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { longFormProjects, shortFormProjects } from "@/lib/data";
+import { motionDesignProjects, documentaryStyleProjects, shortFormProjects } from "@/lib/data";
 
 interface ProjectCardProps {
   title: string;
@@ -70,15 +70,48 @@ export default function Projects() {
             Narrative-driven videos with compelling storytelling
           </motion.p>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
-            {longFormProjects.map((project, index) => (
-              <ProjectCard
-                key={project.id}
-                title={project.title}
-                videoId={project.videoId}
-                index={index}
-              />
-            ))}
+          {/* Motion Design Subsection */}
+          <div className="mb-16 md:mb-20">
+            <motion.h3
+              initial={{ opacity: 0, y: 20 }}
+              animate={longFormInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-2xl md:text-3xl font-semibold text-black mb-8"
+            >
+              Motion Design
+            </motion.h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-10">
+              {motionDesignProjects.map((project, index) => (
+                <ProjectCard
+                  key={project.id}
+                  title={project.title}
+                  videoId={project.videoId}
+                  index={index}
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* Documentary Style Subsection */}
+          <div>
+            <motion.h3
+              initial={{ opacity: 0, y: 20 }}
+              animate={longFormInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="text-2xl md:text-3xl font-semibold text-black mb-8"
+            >
+              Documentary Style
+            </motion.h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-10">
+              {documentaryStyleProjects.map((project, index) => (
+                <ProjectCard
+                  key={project.id}
+                  title={project.title}
+                  videoId={project.videoId}
+                  index={index + motionDesignProjects.length}
+                />
+              ))}
+            </div>
           </div>
         </div>
 
@@ -101,7 +134,7 @@ export default function Projects() {
             Quick, engaging content optimized for social media
           </motion.p>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 max-w-4xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
             {shortFormProjects.map((project, index) => (
               <ProjectCard
                 key={project.id}
