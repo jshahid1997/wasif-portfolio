@@ -19,6 +19,12 @@ export const motionDesignProjects = [
     url: "https://www.youtube.com/watch?v=4VI46upnQqk",
     videoId: "4VI46upnQqk",
   },
+  {
+    id: 4,
+    title: "Keista LLM Explainer",
+    url: "https://youtu.be/PMz72Qoi8AU",
+    videoId: "PMz72Qoi8AU",
+  },
 ];
 
 export const documentaryStyleProjects = [
@@ -30,9 +36,9 @@ export const documentaryStyleProjects = [
   },
   {
     id: 4,
-    title: "Political Consultancy",
-    url: "https://www.youtube.com/watch?v=4yGpeXNtn24",
-    videoId: "4yGpeXNtn24",
+    title: "Meme Coin (Crypto)",
+    url: "https://youtu.be/Lg0lpN4iW8E",
+    videoId: "Lg0lpN4iW8E",
   },
 ];
 
@@ -40,31 +46,37 @@ export const shortFormProjects = [
   {
     id: 1,
     title: "Short Video 1",
-    url: "https://youtube.com/shorts/IIy1_BJtc1A",
-    videoId: "IIy1_BJtc1A",
+    url: "https://youtube.com/shorts/RXE719S7CNM",
+    videoId: "RXE719S7CNM",
   },
   {
     id: 2,
     title: "Short Video 2",
-    url: "https://youtube.com/shorts/IfP2w9gDLa0",
-    videoId: "IfP2w9gDLa0",
+    url: "https://youtube.com/shorts/KZmCM2HiqU4",
+    videoId: "KZmCM2HiqU4",
   },
   {
     id: 3,
     title: "Short Video 3",
-    url: "https://www.youtube.com/shorts/XBCWBK16Fw0",
-    videoId: "XBCWBK16Fw0",
+    url: "https://youtube.com/shorts/sA19O0tm2hU",
+    videoId: "sA19O0tm2hU",
   },
   {
     id: 4,
     title: "Short Video 4",
-    url: "https://www.youtube.com/shorts/vB-60Y-a25c",
-    videoId: "vB-60Y-a25c",
+    url: "https://www.youtube.com/shorts/IIy1_BJtc1A",
+    videoId: "IIy1_BJtc1A",
   },
   {
     id: 5,
     title: "Short Video 5",
-    url: "https://www.youtube.com/shorts/k25yTo1zY2U",
+    url: "https://www.youtube.com/shorts/IfP2w9gDLa0",
+    videoId: "IfP2w9gDLa0",
+  },
+  {
+    id: 6,
+    title: "Short Video 6",
+    url: "https://youtube.com/shorts/k25yTo1zY2U",
     videoId: "k25yTo1zY2U",
   },
 ];
@@ -74,6 +86,8 @@ export const skills = [
   "After Effects",
   "DaVinci Resolve",
   "Photoshop",
+  "Figma",
+  "Illustrator"
 ];
 
 export const socialLinks = {

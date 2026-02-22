@@ -41,7 +41,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-xl md:text-2xl lg:text-3xl text-white/90 font-light"
         >
-          Video Editor & Content Creator
+          Motion Designer & Video Editor
         </motion.p>
 
         {/* Scroll Indicator */}
