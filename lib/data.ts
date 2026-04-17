@@ -79,6 +79,18 @@ export const shortFormProjects = [
     url: "https://youtube.com/shorts/k25yTo1zY2U",
     videoId: "k25yTo1zY2U",
   },
+  {
+    id: 7,
+    title: "Short Video 7",
+    url: "https://youtube.com/shorts/YJs3rVQv-18",
+    videoId: "YJs3rVQv-18",
+  },
+  {
+    id: 8,
+    title: "Short Video 8",
+    url: "https://youtube.com/shorts/CEyx6EDOlcg",
+    videoId: "CEyx6EDOlcg",
+  },
 ];
 
 export const skills = [
