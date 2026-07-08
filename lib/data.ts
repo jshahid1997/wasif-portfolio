@@ -7,13 +7,64 @@ export const heroVideo = {
 };
 
 export const skills = [
-  "Adobe Premiere Pro",
-  "After Effects",
-  "DaVinci Resolve",
-  "Photoshop",
-  "Figma",
-  "Illustrator"
+  "Motion Design",
+  "Video Editing",
+  "Visual Storytelling",
+  "Short-form Content",
+  "Long-form Content",
+  "Sound Design",
+  "Color Grading",
+  "Graphic Design",
 ];
+
+export const experience = [
+  {
+    company: "Metro Media House",
+    role: "Freelance",
+    period: "Jun 2026 – Present",
+    location: "",
+    bullets: [
+      "Edited social-first content with fast turnaround.",
+      "Maintained visual consistency across projects.",
+    ],
+  },
+  {
+    company: "Fitastic Digital Media",
+    role: "On-site",
+    location: "Pune",
+    period: "Jan 2026 – Jun 2026",
+    bullets: [
+      "Produced motion graphics for brands and organizations.",
+      "Collaborated with a team from scripting to delivery.",
+    ],
+  },
+  {
+    company: "Addx Studio",
+    role: "Remote",
+    location: "",
+    period: "Sep 2025 – Jan 2026",
+    bullets: [
+      "End-to-end SaaS Explainer projects for AI Companies.",
+      "Collaborated on digital campaigns.",
+    ],
+  },
+  {
+    company: "Freelancing",
+    role: "Remote",
+    location: "",
+    period: "Jul 2023 – Present",
+    bullets: [
+      "Worked with startups, creators, and agencies.",
+      "Delivered explainers, ads, reels, and long-form content.",
+      "Managed projects from concept to final delivery.",
+    ],
+  },
+];
+
+export const education = {
+  degree: "Bachelor in Fashion Design",
+  institution: "Amity University, Noida",
+};
 
 export const socialLinks = {
   email: "wshahid1998@gmail.com",
