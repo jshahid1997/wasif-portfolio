@@ -4,14 +4,14 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { socialLinks } from "@/lib/data";
-import { FaYoutube, FaInstagram, FaEnvelope } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
 
 export default function Contact() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const socialIcons = [
-    { name: "YouTube", icon: FaYoutube, url: socialLinks.youtube, color: "hover:text-red-600" },
+    { name: "LinkedIn", icon: FaLinkedin, url: socialLinks.linkedin, color: "hover:text-blue-700" },
     { name: "Instagram", icon: FaInstagram, url: socialLinks.instagram, color: "hover:text-pink-600" },
   ];
 

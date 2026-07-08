@@ -68,6 +68,6 @@ export const education = {
 
 export const socialLinks = {
   email: "wshahid1998@gmail.com",
-  youtube: "https://www.youtube.com/@psychic_fps",
+  linkedin: "https://www.linkedin.com/in/wasif-shahid-496053361/",
   instagram: "https://www.instagram.com/its__psychic",
 };
