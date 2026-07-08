@@ -3,7 +3,21 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { motionDesignProjects, documentaryStyleProjects, shortFormProjects } from "@/lib/data";
+
+interface Project {
+  order: number;
+  section: string;
+  title: string;
+  youtubeUrl: string;
+  videoId: string;
+  published: boolean;
+}
+
+interface ProjectsProps {
+  motionDesignProjects: Project[];
+  documentaryStyleProjects: Project[];
+  shortFormProjects: Project[];
+}
 
 interface ProjectCardProps {
   title: string;
@@ -42,7 +56,7 @@ function ProjectCard({ title, videoId, index, isShort = false }: ProjectCardProp
   );
 }
 
-export default function Projects() {
+export default function Projects({ motionDesignProjects, documentaryStyleProjects, shortFormProjects }: ProjectsProps) {
   const longFormRef = useRef(null);
   const shortFormRef = useRef(null);
   const longFormInView = useInView(longFormRef, { once: true, margin: "-100px" });
@@ -83,7 +97,7 @@ export default function Projects() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-10">
               {motionDesignProjects.map((project, index) => (
                 <ProjectCard
-                  key={project.id}
+                  key={project.order}
                   title={project.title}
                   videoId={project.videoId}
                   index={index}
@@ -105,7 +119,7 @@ export default function Projects() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-10">
               {documentaryStyleProjects.map((project, index) => (
                 <ProjectCard
-                  key={project.id}
+                  key={project.order}
                   title={project.title}
                   videoId={project.videoId}
                   index={index + motionDesignProjects.length}
@@ -137,7 +151,7 @@ export default function Projects() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
             {shortFormProjects.map((project, index) => (
               <ProjectCard
-                key={project.id}
+                key={project.order}
                 title={project.title}
                 videoId={project.videoId}
                 index={index}
